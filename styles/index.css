@@ -112,18 +112,38 @@ header .side-bar {
     position: absolute;
     background: white;
     border-radius: 10px;
-    left: -500px;
-    height: 200px;
+    left: -800px;
+    top: 100px;
+    width: 330px;
     font-size: 2rem;
     padding: 20px;
     z-index: 2000;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    color: #1d1e259e;
+    -webkit-box-shadow: -3px 2px 20px 20px;
+            box-shadow: -3px 2px 20px 20px;
+  }
+  header .side-bar ul li {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #1d1e25;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
   }
   header .side-bar ul.active {
-    left: 80px;
+    left: 0px;
   }
-  header .side-bar .active ~ .content {
+  header .side-bar .active ~ main {
     opacity: 0.3;
   }
 }
@@ -349,16 +369,16 @@ header nav ul li:hover {
 .second-section .point-text-section-2 span {
   background: #f25f3a;
   color: #ffefeb;
-  margin-right: 50px;
+  margin-right: 0px;
   padding: 10px 30px;
   border-radius: 50px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1115px) {
   .second-section .point-text-section-2 span {
     margin-right: 0px;
     padding: 10px 20px;
-    margin-left: -50px;
+    margin-left: -110px;
   }
 }
 
@@ -368,9 +388,9 @@ header nav ul li:hover {
   font-family: "Be Vietnam Pro-medium";
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1115px) {
   .second-section .point-text-section-2 h3 {
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
     font-size: 0.8rem;
     background: #ffefeb;
     padding: 10px;
@@ -385,7 +405,7 @@ header nav ul li:hover {
 
 @media screen and (max-width: 1115px) {
   .second-section .point-text-section-2 p {
-    margin: 10px 0;
+    margin: 10px 15px;
     text-align: left;
   }
 }

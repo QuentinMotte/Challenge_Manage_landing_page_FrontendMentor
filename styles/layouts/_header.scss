@@ -1,0 +1,100 @@
+header {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    .side-bar {
+        display: none;
+    }
+    @media screen and (max-width: 1115px) {
+        .side-bar {
+            display: block;
+
+            z-index: 2000;
+            // position: relative;
+            // height: 100px;
+            // top: 50px;
+            // // right: 0;
+            // right: -230px;
+            // background: white;
+            // z-index: 1000;
+
+            .toggle-btn {
+                position: absolute;
+                top: 50px;
+                right: 0px;
+                cursor: pointer;
+                height: 50px;
+                width: 50px;
+                z-index: 1000;
+
+                @media screen and (min-width: 1115px) {
+                    display: none;
+                }
+                span {
+                    width: 35px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background: $VeryDarkBlue;
+                    display: block;
+                    margin-top: 4px;
+                    transition: 0.3s ease;
+                }
+            }
+            ul {
+                position: absolute;
+                background: white;
+                border-radius: 10px;
+                left: -500px;
+                height: 200px;
+                font-size: 2rem;
+                padding: 20px;
+                z-index: 2000;
+                transition: 0.2s ease;
+            }
+            ul.active {
+                left: 80px;
+            }
+            .active ~ .content {
+                opacity: 0.3;
+            }
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 60px 0;
+        position: relative;
+        @media screen and (max-width: 900px) {
+            margin-left: -50px;
+        }
+        &:after {
+            content: url("../../assets/images/bg-tablet-pattern.svg");
+            position: absolute;
+            z-index: -10;
+            right: -300px;
+            top: -250px;
+        }
+
+        ul {
+            display: flex;
+            li {
+                padding: 0 20px;
+                color: $DarkBlue;
+                font-family: $fontmedium;
+                cursor: pointer;
+                &:hover {
+                    color: $DarkGrayishBlue;
+                }
+                @media screen and (max-width: 1115px) {
+                    display: none;
+                }
+            }
+        }
+        button {
+            @media screen and (max-width: 1115px) {
+                display: none;
+            }
+        }
+    }
+}

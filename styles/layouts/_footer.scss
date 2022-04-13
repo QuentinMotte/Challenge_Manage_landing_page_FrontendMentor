@@ -1,0 +1,134 @@
+footer {
+    background: $VeryDarkBlue;
+    height: 245px;
+    color: $DarkGrayishBlue;
+    position: relative;
+    @media screen and (max-width: 900px) {
+        height: 500px;
+    }
+
+    .second-footer {
+        display: flex;
+        justify-content: space-evenly;
+        height: 245px;
+        @media screen and (max-width: 900px) {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "email email"
+                "list li"
+                "icons icons"
+                "logo logo"
+                "copy copy";
+            margin: 0;
+            padding: 0;
+            height: 500px;
+        }
+
+        .logo-icons {
+            color: $VeryPaleRed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @media screen and (max-width: 1115px) {
+                flex-direction: column-reverse;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: space-around;
+                transform: scale(1.2);
+                grid-area: icons;
+                cursor: pointer;
+                @media screen and (max-width: 1115px) {
+                    margin: 30px -120px 20px 60px;
+                    transform: scale(1.5);
+                }
+                i:hover {
+                    color: $BrightRed;
+                }
+            }
+            img {
+                grid-area: logo;
+                @media screen and (max-width: 1115px) {
+                    margin: 30px -120px 20px 60px;
+                }
+            }
+        }
+    }
+    .first-nav-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-area: list;
+        li {
+            padding: 7px;
+            cursor: pointer;
+            &:hover {
+                color: $BrightRed;
+            }
+        }
+    }
+    .second-nav-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        grid-area: li;
+        @media screen and (max-width: 1115px) {
+            padding: 0;
+        }
+        li {
+            padding: 7px;
+            cursor: pointer;
+            &:hover {
+                color: $BrightRed;
+            }
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-area: email;
+        @media screen and (max-width: 1115px) {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        #email {
+            padding: 10px 60px 10px 20px;
+            border-radius: 50px;
+
+            &::placeholder {
+                color: $DarkGrayishBlue;
+            }
+
+            &:focus {
+                color: $BrightRed;
+                outline: 1px solid $BrightRed;
+            }
+        }
+        label {
+            margin-left: 5px;
+            padding: 10px 20px;
+            background: $BrightRed;
+            color: $VeryPaleRed;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(140%);
+            }
+        }
+        p {
+            @media screen and (max-width: 1115px) {
+                position: absolute;
+                bottom: 30px;
+                left: 10%;
+            }
+        }
+    }
+}

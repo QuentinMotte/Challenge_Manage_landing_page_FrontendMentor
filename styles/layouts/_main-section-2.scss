@@ -1,0 +1,74 @@
+.second-section {
+    width: 80%;
+    margin: 120px auto;
+    display: flex;
+    @media screen and (max-width: 1115px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .text-section-2 {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: url(../../assets/images/bg-tablet-pattern.svg);
+            z-index: -10;
+            transform: translate(-680px, 60px);
+        }
+        h2 {
+            font-size: 2.7rem;
+            font-family: $fontbold;
+            letter-spacing: -1.5px;
+            margin-right: 10px;
+            @media screen and (max-width: 1115px) {
+                font-size: 2rem;
+                margin-top: -30px;
+            }
+        }
+        p {
+            line-height: 25px;
+            margin-top: 30px;
+            margin-right: 130px;
+            @media screen and (max-width: 1115px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .point-text-section-2 {
+        span {
+            background: $BrightRed;
+            color: $VeryPaleRed;
+            margin-right: 50px;
+            padding: 10px 30px;
+            border-radius: 50px;
+            @media screen and (max-width: 900px) {
+                margin-right: 0px;
+                padding: 10px 20px;
+                margin-left: -50px;
+            }
+        }
+        h3 {
+            padding-bottom: 20px;
+            margin-left: 90px;
+            font-family: $fontmedium;
+            @media screen and (max-width: 900px) {
+                margin: 10px 0 10px 0;
+                font-size: 0.8rem;
+                background: $VeryPaleRed;
+                padding: 10px;
+            }
+        }
+        p {
+            padding-bottom: 40px;
+            margin-left: 230px;
+            line-height: 25px;
+            @media screen and (max-width: 1115px) {
+                margin: 10px 0;
+                text-align: left;
+            }
+        }
+    }
+}

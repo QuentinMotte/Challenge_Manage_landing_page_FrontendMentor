@@ -840,4 +840,21 @@ footer .form label:hover {
     left: 10%;
   }
 }
+
+footer .form span {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 0.8rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: red;
+}
+
+footer .form .error span {
+  visibility: visible;
+  opacity: 1;
+  color: red;
+}
 /*# sourceMappingURL=index.css.map */

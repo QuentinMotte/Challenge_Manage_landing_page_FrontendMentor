@@ -130,5 +130,19 @@ footer {
                 left: 10%;
             }
         }
+        span {
+            margin-bottom: 20px;
+            display: block;
+            font-size: 0.8rem;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            color: red;
+        }
+        .error span {
+            visibility: visible;
+            opacity: 1;
+            color: red;
+        }
     }
 }

@@ -165,7 +165,7 @@ header nav {
 }
 
 header nav:after {
-  content: url("../../assets/images/bg-tablet-pattern.svg");
+  content: url("../assets/images/bg-tablet-pattern.svg");
   position: absolute;
   z-index: -10;
   right: -300px;
@@ -348,7 +348,7 @@ header .side-bar.active span:nth-child(3) {
 
 .second-section .text-section-2::after {
   position: absolute;
-  content: url(../../assets/images/bg-tablet-pattern.svg);
+  content: url(../assets/images/bg-tablet-pattern.svg);
   z-index: -10;
   -webkit-transform: translate(-680px, 60px);
           transform: translate(-680px, 60px);
@@ -476,7 +476,7 @@ header .side-bar.active span:nth-child(3) {
 
 .third-section .sliders .anisha::before {
   position: absolute;
-  content: url(../../assets/images/avatar-anisha.png);
+  content: url(../assets/images/avatar-anisha.png);
   top: -75px;
   left: 205px;
   -webkit-transform: scale(0.4);
@@ -491,7 +491,7 @@ header .side-bar.active span:nth-child(3) {
 
 .third-section .sliders .ali::before {
   position: absolute;
-  content: url(../../assets/images/avatar-ali.png);
+  content: url(../assets/images/avatar-ali.png);
   top: -75px;
   left: 205px;
   -webkit-transform: scale(0.4);
@@ -506,7 +506,7 @@ header .side-bar.active span:nth-child(3) {
 
 .third-section .sliders .richard::before {
   position: absolute;
-  content: url(../../assets/images/avatar-richard.png);
+  content: url(../assets/images/avatar-richard.png);
   top: -75px;
   left: 205px;
   -webkit-transform: scale(0.4);
@@ -521,7 +521,7 @@ header .side-bar.active span:nth-child(3) {
 
 .third-section .sliders .shanai::before {
   position: absolute;
-  content: url(../../assets/images/avatar-shanai.png);
+  content: url(../assets/images/avatar-shanai.png);
   top: -75px;
   left: 205px;
   -webkit-transform: scale(0.4);
@@ -556,7 +556,7 @@ header .side-bar.active span:nth-child(3) {
 
 .end-main {
   background: #f25f3a;
-  background-image: url(../../assets/images/bg-simplify-section-desktop.svg);
+  background-image: url(../assets/images/bg-simplify-section-desktop.svg);
   background-position: fixed bottom 0px right -210px;
   margin-top: 150px;
   position: relative;

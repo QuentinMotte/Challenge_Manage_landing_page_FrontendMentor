@@ -13,7 +13,7 @@
         position: relative;
         &::after {
             position: absolute;
-            content: url(../../assets/images/bg-tablet-pattern.svg);
+            content: url(../assets/images/bg-tablet-pattern.svg);
             z-index: -10;
             transform: translate(-680px, 60px);
         }
